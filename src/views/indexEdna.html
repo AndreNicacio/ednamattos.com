@@ -1,0 +1,31 @@
+{% extends "layoutEdna.html" %}
+
+{% set pageId = "page-home" %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="./styles/homeEdna.css">
+    <link rel="stylesheet" type="text/css" href="./styles/modalEdna.css">
+{% endblock styles %}
+
+{% block content %}
+    <div class="content">
+
+        <header>
+            <h2><img src="./assets/logo.jpeg" alt="Logomarca"></h2>
+        </header>
+
+        <main>
+            <h1>{{ title }}</h1>
+
+            <p>Guia de Informações para estudantes, todas as plataformas de estudo em um unico so local</p>
+
+            <a href="">
+                <span></span>
+                <strong>Guia Do Aluno</strong>
+            </a>
+
+        </main>
+
+    </div>
+{% endblock content %}
+
