@@ -23,7 +23,12 @@ nunjucks.configure("src/views", {
 // req: requisiçao
 //res: resposta
 server.get("/", (req, res) => {
-   return res.render("indexEdna.html", { title: "Estudantes do Naza,\n geral conectado!"})
+   return res.render("index.html", { title: "Estudantes do Naza,\n geral conectado!"})
 })
+
+server.get("/guia", (req, res) => {
+    return res.render("guiaEdna.html", { title: "Estudantes do Naza,\n geral conectado!"})
+ })
+
 ////ligar o servidor
-server.listen(3000)
+server.listen(2083)
